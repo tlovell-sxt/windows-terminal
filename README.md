@@ -1,24 +1,33 @@
 # `windows-terminal`
 Some windows terminal settings, mostly keybindings.
 
-## Setup with symlink
-We can symlink the settings file to the one that exists in this repo.
-
-The downside of this is that changing settings requires restarting windows terminal to take effect.
-
-1. Clone this repo into your wsl home directory
+## Setup your settings directory as a repository tracking this repo
 ```bash
-cd
-git clone https://github.com/tlovell-sxt/windows-terminal
+# this may be already created if you're using my nixos-config
+WINDOWS_USERNAME=<your windows username>
+cd /mnt/c/Users/$WINDOWS_USERNAME/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState
+
+# setup repo
+git init
+# use ssh link if you prefer
+git remote add origin https://github.com/tlovell-sxt/windows-terminal 
+git branch -m main
+git fetch
+
+# backup your settings.json
+cp settings.json settings.json.bak
+
+# sync up with main
+git reset --hard origin/main
 ```
-2. Completely close out of windows terminal, end tasks with task manager
-3. Start powershell (not in windows terminal) as administrator
-4. Remove the original settings.json and replace it with a symlink.
-```powershell
-$windowsHome = "C:\Users\TrevorLovell"
-$wslHome = "\\wsl.localhost\NixOS\home\nixos"
-rm "$windowsHome\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
-New-Item -Path "$windowsHome\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Target "$wslHome\windows-terminal\settings.json"
+
+You will also want to set up an alias to `cd` into this repo.
+This will already exist if you use my nixos-config.
+
+*In `.bashrc`*
+```bash
+export WINDOWS_USERNAME=<your windows username>
+alias windows-terminal-config="cd /mnt/c/Users/$WINDOWS_USERNAME/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState"
 ```
 
 ## Keybinding Cheatsheet
