@@ -146,7 +146,8 @@
             "colorScheme": "One Half Dark",
             "font": 
             {
-                "face": "Cascadia Mono"
+                "face": "Cascadia Mono",
+                "size": 10
             }
         },
         "list": 
