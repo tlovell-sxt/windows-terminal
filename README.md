@@ -20,3 +20,16 @@ $wslHome = "\\wsl.localhost\NixOS\home\nixos"
 rm "$windowsHome\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
 New-Item -Path "$windowsHome\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Target "$wslHome\windows-terminal\settings.json"
 ```
+
+## Keybinding Cheatsheet
+| Key | Action |
+| --- | --- |
+| `alt+num` | switch to tab `num` |
+| `alt+` vim direction (`h`, `j`, `l`) | move pane focus |
+| `alt+t` | new pane |
+| `alt+shift+t` | new tab |
+| `alt+shift+q` | close pane |
+
+Also, `ctrl+c` and `ctrl+v` have been unbound.
+These conflict with keyboard kill and vim visual block.
+Use `ctrl+shift+` `c/v` instead.
