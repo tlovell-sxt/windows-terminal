@@ -9,6 +9,14 @@
                 "action": "newTab"
             },
             "id": "User.newTab.5DEADB41"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "up"
+            },
+            "id": "User.moveFocus.6CD791B"
         }
     ],
     "copyFormatting": "none",
@@ -37,12 +45,12 @@
             "keys": "ctrl+alt+9"
         },
         {
-            "id": "Terminal.SwitchToTab5",
-            "keys": "alt+6"
-        },
-        {
             "id": null,
             "keys": "ctrl+alt+1"
+        },
+        {
+            "id": "Terminal.SwitchToTab5",
+            "keys": "alt+6"
         },
         {
             "id": "Terminal.SwitchToTab0",
@@ -131,6 +139,14 @@
         {
             "id": null,
             "keys": "ctrl+shift+w"
+        },
+        {
+            "id": "Terminal.MoveFocusUp",
+            "keys": "alt+k"
+        },
+        {
+            "id": null,
+            "keys": "alt+up"
         }
     ],
     "newTabMenu": 
