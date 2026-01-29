@@ -33,11 +33,11 @@ alias windows-terminal-config="cd /mnt/c/Users/$WINDOWS_USERNAME/AppData/Local/P
 ## Keybinding Cheatsheet
 | Key | Action |
 | --- | --- |
-| `alt+num` | switch to tab `num` |
-| `alt+` vim direction (`h`, `j`, `l`) | move pane focus |
-| `alt+t` | new pane |
-| `alt+shift+t` | new tab |
-| `alt+shift+q` | close pane |
+| `ctrl+num` | switch to tab `num` |
+| `ctrl+` vim direction (`h`, `j`, `k`, `l`) | move pane focus |
+| `ctrl+t` | new pane |
+| `ctrl+shift+t` | new tab |
+| `ctrl+shift+q` | close pane |
 
 Also, `ctrl+c` and `ctrl+v` have been unbound.
 These conflict with keyboard kill and vim visual block.
