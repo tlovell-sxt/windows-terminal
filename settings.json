@@ -25,20 +25,16 @@
     "keybindings": 
     [
         {
-            "id": "Terminal.SwitchToTab1",
-            "keys": "alt+2"
+            "id": null,
+            "keys": "alt+left"
         },
         {
             "id": "Terminal.SwitchToTab2",
             "keys": "alt+3"
         },
         {
-            "id": null,
-            "keys": "alt+left"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+alt+2"
+            "id": "Terminal.SwitchToTab1",
+            "keys": "alt+2"
         },
         {
             "id": null,
@@ -46,15 +42,19 @@
         },
         {
             "id": null,
-            "keys": "ctrl+alt+1"
+            "keys": "ctrl+alt+2"
+        },
+        {
+            "id": "Terminal.SwitchToTab0",
+            "keys": "alt+1"
         },
         {
             "id": "Terminal.SwitchToTab5",
             "keys": "alt+6"
         },
         {
-            "id": "Terminal.SwitchToTab0",
-            "keys": "alt+1"
+            "id": null,
+            "keys": "ctrl+alt+1"
         },
         {
             "id": null,
@@ -162,7 +162,7 @@
             "colorScheme": "One Half Dark",
             "font": 
             {
-                "face": "Cascadia Mono",
+                "face": "CaskaydiaMono Nerd Font Mono",
                 "size": 10
             }
         },
