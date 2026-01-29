@@ -1,7 +1,13 @@
 # `windows-terminal`
 Some windows terminal settings, mostly keybindings.
 
-## Setup your settings directory as a repository tracking this repo
+## Setup
+
+### Install font with icons
+1. Download Cascadia Nerd Font Mono https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CascadiaMono.zip
+2. Drag-and-drop into settings `Personalization > Fonts`
+
+### init settings directory as a repository tracking this repo
 ```bash
 # this may be already created if you're using my nixos-config
 WINDOWS_USERNAME=<your windows username>
